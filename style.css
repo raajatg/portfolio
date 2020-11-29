@@ -1,6 +1,8 @@
+/* Header and Nav Formatting */
+
 .name {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
     color: #093478;
 }
@@ -11,7 +13,7 @@
 
 .header-text {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     letter-spacing: 2px;
     color: #093478;
 }
@@ -25,11 +27,18 @@
     background-color: white;
 }
 
+/* Cover Page */
+
 .typed-text {
     font-family: "Metrophobic", "helvetica","sans-serif";
     letter-spacing: 2px;
     color: #093478;
     opacity: 0;
+}
+
+#coverPage {
+    position: relative;
+    overflow: hidden;
 }
 
 a {
@@ -45,6 +54,8 @@ a:hover {
     transition: 1s;
 }
 
+/* Circle Animations */
+
 .bigCircles {
     height: 20rem;
     width: 20rem;
@@ -55,38 +66,45 @@ a:hover {
     margin-right: auto;
     left: 0;
     right: 0;
-    
 }
 
 .leftBottomCircle {
     z-index: -2;
     background-color: #1FAD83;
+    overflow: hidden;
 }
 
 .leftTopCircle {
     z-index: -1;
     background-color: #6F82D8;
+    overflow: hidden;
 }
 
 .topCircle {
     z-index: -3;
     background-color: #F87272;
+    overflow: hidden;
 }
 
 .rightTopCircle {
     z-index: -4;
     background-color: #F897E9;
+    overflow: hidden;
 }
 
 .rightBottomCircle {
     z-index: -5;
     background-color: #B991ED;
+    overflow: hidden;
 }
 
 .bottomCircle {
     z-index: -6;
     background-color: #F3C009;
+    overflow: hidden;
 }
+
+/* Arrow to Portfolio */
 
 .downArrow {
     position: sticky;
@@ -100,6 +118,14 @@ a:hover {
     text-align: center;
 }
 
+/* Portfolio section */
+
+#portfolioTiles {
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Portfolio tile images */
+
 #projectOne > .tileImage {
     background-color: #E5EEFF;
     padding-bottom: 50%;
@@ -108,18 +134,102 @@ a:hover {
     background-size: cover;
 }
 
+#projectTwo > .tileImage {
+    background-color: #FFFBCC;
+    padding-bottom: 50%;
+    background-image: url(./Assets/tileNews.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projectThree > .tileImage {
+    background-color: #F2E5FF;
+    padding-bottom: 100%;
+    background-image: url(./Assets/tileDashboard.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Heart arrow formatting */
+
 .heartLeft {
     transform: rotate(90deg);
     position: absolute;
     background-image: url(./Assets/heart.svg);
     background-position: center;
     background-size: cover;
+    z-index: 1;
     width: 40%;
     padding-bottom: 35%;
     right:-20%;
+    margin-right: 0;
     top: 30%;
     transition: 1s;
+}
+
+.heartRight {
+    transform: rotate(-90deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
     z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left:-20%;
+    margin-right: 0;
+    top: 30%;
+    transition: 1s;
+}
+
+.heartUp {
+    transform: rotate(180deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 80%;
+    transition: 1s;
+}
+
+/* Text for portfolio tiles */
+.tileTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+#projectThree > .tileTextContainer {
+    align-items: center;
+    padding-bottom: 50%;
+}
+
+#projectOne > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
+    padding-right: 5vw;
+    background-size: 250%;
+}
+
+#projectTwo > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
+    padding-left: 5vw;
+    background-size: 250%;
+}
+
+#projectThree > .tileTextContainer {
+    transition: 1s;
+    background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF);
+    background-size: 100% 250%;
 }
 
 .tileTitle {
@@ -140,23 +250,41 @@ a:hover {
     z-index: 2;
 }
 
-.tileTextContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 3vw;
-    transition: 1s;
-    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
-    background-size: 250%;
+.tileDescription > p {
+    margin-top: 1rem;
 }
+
+#projectOne, #projectTwo, #projectThree {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover over portfolio tiles */
 
 #projectOne:hover .heartLeft {
     transform: rotate(0deg);
     right: -110%;
 }
 
+#projectTwo:hover .heartRight {
+    transform: rotate(0deg);
+    left: -110%;
+}
+
+#projectThree:hover .heartUp {
+    transform: rotate(0deg);
+}
+
 #projectOne:hover .tileTextContainer {
     background-position: -63%;
+}
+
+#projectTwo:hover .tileTextContainer {
+    background-position: 75%;
+}
+
+#projectThree:hover .tileTextContainer {
+    background-position: 0% -50% !important;
 }
 
 #projectOne:hover .tileTitle {
@@ -167,7 +295,135 @@ a:hover {
     color: #093478;
 }
 
+#projectTwo:hover .tileTitle {
+    color: #093478;
+}
+
+#projectTwo:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileTitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileSubtitle {
+    color: #093478;
+}
+
+/* Adjustments for medium screen size */
+@media (min-width: 576px) and (max-width: 768px) {
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+
+    .heartUp {
+        transform: rotate(90deg);
+        z-index: 1;
+        width: 40%;
+        padding-bottom: 35%;
+        right:-20%;
+        margin-right: 0;
+        top: 30%;
+    }
+
+    #projectThree > .tileTextContainer {
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    #projectThree > .tileTextContainer {
+        background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
+        padding-right: 5vw;
+        background-size: 250% !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        right: -110% !important;
+        top: 30% !important;
+    }
+
+    #projectThree:hover .tileTextContainer {
+        background-position: -63% !important;
+    }
+}
+
+/* Adjustments for mobile */
+
+@media (max-width: 576px) {
+    .heartLeft, .heartRight, .heartUp {
+        transform: rotate(180deg);
+        width: 25%;
+        padding-bottom: 22%;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: 80%
+    }
+
+    #projectOne > .tileImage {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #projectOne:hover .heartLeft {
+        transform: rotate(0deg) !important;
+        right: 0 !important;
+    }
+
+    #projectTwo:hover .heartRight {
+        transform: rotate(0deg) !important;
+        left: 0 !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        top: 80% !important;
+    }
+
+    #projectOne > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #EDF3FF 50%, #CDDDFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectTwo > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectThree > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectOne:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectTwo:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+}
+
+
+
 /* Icon 1 */
+
+.navbar-toggler {
+    padding: 0;
+}
 
 .animated-icon3 {
     width: 30px;
