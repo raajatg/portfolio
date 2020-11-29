@@ -88,16 +88,7 @@ a:hover {
     background-color: #F3C009;
 }
 
-.downArrow {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    bottom: 3rem;
-    align-self: flex-end;
-    visibility: hidden;
-}
+
 
 
 

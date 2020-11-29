@@ -5,8 +5,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Raajat Gupta</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+        <script src="core.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
 </html>
-<p>Hi</p>
+
+<body class="text-center">
+<!--Navbar-->
+  <nav class="navbar fixed-top header mar-bot">
+  
+    <!-- Navbar brand -->
+    <a class="navbar-brand name" href="#">RAAJAT GUPTA</a>
+        <!-- Collapsible content -->
+        <div class="collapse ml-auto" id="navbarSupportedContent22">
+  
+            <!-- Links -->
+            <ul class="navbar-nav flex-row ml-auto">
+              <li class="nav-item">
+                <a class="nav-link header-text px-1" href="#">ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link header-text px-1" href="#">RESUME</a>
+              </li>
+            </ul>
+            <!-- Links -->
+        
+          </div>
+          <!-- Collapsible content -->
+    <!-- Collapse button -->
+    <button class="navbar-toggler third-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+      aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon3"><span></span><span></span><span></span></div>
+    </button>  
+  </nav>
+  <!--/.Navbar-->
+  
+  
+  <!--Cover Page-->
+  <div class="vh-100 d-flex align-items-center">
+    <div class="bigCircles leftBottomCircle"></div>
+    <div class="bigCircles leftTopCircle"></div>
+    <div class="bigCircles topCircle"></div>
+    <div class="bigCircles rightTopCircle"></div>
+    <div class="bigCircles rightBottomCircle"></div>
+    <div class="bigCircles bottomCircle"></div>
+    <div class="mx-auto col-md-6 d-inline-flex">
+        <h4 class="text-center typed-text"> 
+            <div id="app"></div>
+            <script type='text/javascript'>
+                const typewriter = new Typewriter('#app');
+            
+                typewriter.pauseFor(4000)
+                    .typeString('Oh, hello there 👋!')
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("I'm Raajat Gupta.")
+                  .start();
+
+              </script>
+            Currently <a href="https://www.hcii.cmu.edu/academics/mhci" class="hoverWord" data-words="MHCI|Master of Human-Computer Interaction">MHCI</a> 
+            @ 
+            <a href="https://www.cmu.edu/" class="hoverWord" data-words="CMU|Carnegie Mellon University">CMU</a>
+            , I design experiences that bring communities together to help people feel more unified in what can feel like lonely and polarizing times. I find myself asking the same question in most of my projects – 
+            <a href="#" class="hoverWord">why can’t we be friends?</a>
+        </h4>
+    </div>
+
+    <img src="./Assets/downArrow.svg" class="downArrow slideUp">
+
+  </div> 
+
+<!--Portfolio Items-->
+
+  </body>
