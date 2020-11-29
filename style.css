@@ -89,17 +89,83 @@ a:hover {
 }
 
 .downArrow {
-    position: absolute;
+    position: sticky;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
     left: 0;
     right: 0;
     bottom: 3rem;
-    align-self: flex-end;
     visibility: hidden;
+    text-align: center;
 }
 
+#projectOne > .tileImage {
+    background-color: #E5EEFF;
+    padding-bottom: 50%;
+    background-image: url(./Assets/tileDancers.svg);
+    background-position: center;
+    background-size: cover;
+}
 
+.heartLeft {
+    transform: rotate(90deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    width: 40%;
+    padding-bottom: 35%;
+    right:-20%;
+    top: 30%;
+    transition: 1s;
+    z-index: 1;
+}
+
+.tileTitle {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.tileSubtitle {
+    font-family: "helvetica","sans-serif";
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.tileDescription {
+    z-index: 2;
+}
+
+.tileTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 3vw;
+    transition: 1s;
+    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
+    background-size: 250%;
+}
+
+#projectOne:hover .heartLeft {
+    transform: rotate(0deg);
+    right: -110%;
+}
+
+#projectOne:hover .tileTextContainer {
+    background-position: -63%;
+}
+
+#projectOne:hover .tileTitle {
+    color: #093478;
+}
+
+#projectOne:hover .tileSubtitle {
+    color: #093478;
+}
 
 /* Icon 1 */
 

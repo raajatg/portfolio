@@ -17,7 +17,7 @@
     </head>
 </html>
 
-<body class="text-center">
+<body>
 <!--Navbar-->
   <nav class="navbar fixed-top header mar-bot">
   
@@ -49,7 +49,7 @@
   
   
   <!--Cover Page-->
-  <div class="vh-100 d-flex align-items-center">
+  <div class="vh-100 d-flex align-items-center text-center">
     <div class="bigCircles leftBottomCircle"></div>
     <div class="bigCircles leftTopCircle"></div>
     <div class="bigCircles topCircle"></div>
@@ -77,11 +77,45 @@
             <a href="#" class="hoverWord">why can’t we be friends?</a>
         </h4>
     </div>
-
-    <img src="./Assets/downArrow.svg" class="downArrow slideUp">
-
   </div> 
 
+<div class="container-fluid downArrow">
+    <a href="#portfolioTiles">
+        <img src="Assets/downArrow.svg" class="slideUp"/>
+    </a>
+</div>
+  
 <!--Portfolio Items-->
+<div id="portfolioTiles" class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 order-md-1 no-gutters">
+            <div id="projectOne" class="row">
+                <div class="col-6 tileImage d-flex">
+                    <div class="heartLeft"></div>
+                </div>
+                <div class="col-6 tileTextContainer">
+                    <a href="#" class="tileDescription">
+                        <p class="tileTitle">Kelly Strayhorn Theater + Carnegie Mellon University</p>
+                        <p class="tileSubtitle">Why can’t theatergoers build intimate communities in a virtual setting?</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 order-md-3 no-gutters">
+            <div class="row">
+                <div class="col-6">5</div>
+                <div class="col-6">6</div>
+            </div>
+        </div>
+        <div class="col-md-4 order-md-2 no-gutters">
+            <div class="row">
+                <div class="col-6 col-md-12">3</div>
+                <div class="col-6 col-md-12">4</div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
 
   </body>
