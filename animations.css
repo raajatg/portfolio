@@ -18,7 +18,7 @@ Custom Animation for entrance of left bottom circle
 ==============================================
 */
 
-.typed-text{
+.fadeCustom{
 	animation-name: fadeInText;
 	-webkit-animation-name: fadeInText;
 
