@@ -91,7 +91,7 @@ Custom Animation for entrance of left bottom circle
 		-webkit-transform: translate(0%,0%);
 	}
 	100% {
-		-webkit-transform: translate(-30%,-50%)
+		-webkit-transform: translate(-30%,-50%);
 	}	
 }
 

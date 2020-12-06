@@ -1,14 +1,85 @@
-/* Header and Nav Formatting */
+/* Color Scheme */
+
+.blue {
+    background-color: #6F82D8;
+}
+
+.fontBlue {
+    color: #6F82D8;
+}
+
+.green {
+    background-color: #1FAD83;
+}
+
+.red {
+    background-color: #F87272;
+}
+
+.purple {
+    background-color: #B991ED;
+}
+
+.pink {
+    background-color: #F897E9;
+}
+
+.yellow {
+    background-color: #FDF187;
+}
+
+.lightBlue {
+    background-color: #E5EEFF;
+}
+
+.lightGreen {
+    background-color: #E7FEF2;
+}
+
+.lightRed {
+    background-color: #FFE1DB;
+}
+
+.lightPurple {
+    background-color: #EEE1FF;
+}
+
+.lightPink {
+    background-color: #FFE9FE;
+}
+
+.lightYellow {
+    background-color: #FFFBCC;
+}
+
+/* Text Formatting */
+.prototype {
+    font-family: "PROTOTYPE", "helvetica","sans-serif";
+    letter-spacing: 2px;
+}
+
+.metrophobic {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+}
+
+p {
+    font-family: "helvetica","sans-serif";
+}
+
+.plainList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
 
 .name {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
     font-size: 1.5rem;
     letter-spacing: 2px;
     color: #093478;
-}
-
-.mar-bot {
-    margin-bottom: auto;
 }
 
 .header-text {
@@ -23,217 +94,10 @@
     color: #093478;
 }
 
-.header {
-    background-color: white;
-}
-
-p {
-    font-size: 1rem;
-}
-
-/* Cover Page */
-
 .typed-text {
     font-family: "Metrophobic", "helvetica","sans-serif";
     letter-spacing: 2px;
     color: #093478;
-    opacity: 0;
-}
-
-#coverPage {
-    position: relative;
-    overflow: hidden;
-}
-
-a {
-    color: #6F82D8;
-}
-
-a:hover {
-    color: #093478;
-    text-decoration: none;
-  }
-
-.hoverWord {
-    transition: 1s;
-}
-
-/* Circle Animations */
-
-.bigCircles {
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    position: absolute;
-    visibility: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
-
-.leftBottomCircle {
-    z-index: -2;
-    background-color: #1FAD83;
-    overflow: hidden;
-}
-
-.leftTopCircle {
-    z-index: -1;
-    background-color: #6F82D8;
-    overflow: hidden;
-}
-
-.topCircle {
-    z-index: -3;
-    background-color: #F87272;
-    overflow: hidden;
-}
-
-.rightTopCircle {
-    z-index: -4;
-    background-color: #F897E9;
-    overflow: hidden;
-}
-
-.rightBottomCircle {
-    z-index: -5;
-    background-color: #B991ED;
-    overflow: hidden;
-}
-
-.bottomCircle {
-    z-index: -6;
-    background-color: #FDF187;
-    overflow: hidden;
-}
-
-/* Arrow to Portfolio */
-
-.downArrow {
-    position: sticky;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-    left: 0;
-    right: 0;
-    bottom: 3rem;
-    visibility: hidden;
-    text-align: center;
-}
-
-/* Portfolio section */
-
-#portfolioTiles {
-    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.25);
-}
-
-/* Portfolio tile images */
-
-#projectOne > .tileImage {
-    background-color: #E5EEFF;
-    padding-bottom: 50%;
-    background-image: url(./Assets/tileDancers.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-#projectTwo > .tileImage {
-    background-color: #FFFBCC;
-    padding-bottom: 50%;
-    background-image: url(./Assets/tileNews.svg);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-#projectThree > .tileImage {
-    background-color: #F2E5FF;
-    padding-bottom: 100%;
-    background-image: url(./Assets/tileDashboard.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Heart arrow formatting */
-
-.heartLeft {
-    transform: rotate(90deg);
-    position: absolute;
-    background-image: url(./Assets/heart.svg);
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    width: 40%;
-    padding-bottom: 35%;
-    right:-20%;
-    margin-right: 0;
-    top: 30%;
-    transition: 1s;
-}
-
-.heartRight {
-    transform: rotate(-90deg);
-    position: absolute;
-    background-image: url(./Assets/heart.svg);
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    width: 40%;
-    padding-bottom: 35%;
-    left:-20%;
-    margin-right: 0;
-    top: 30%;
-    transition: 1s;
-}
-
-.heartUp {
-    transform: rotate(180deg);
-    position: absolute;
-    background-image: url(./Assets/heart.svg);
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    width: 40%;
-    padding-bottom: 35%;
-    left: 0;
-    right: 0;
-    margin-right: auto;
-    margin-left: auto;
-    top: 80%;
-    transition: 1s;
-}
-
-/* Text for portfolio tiles */
-.tileTextContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-}
-
-#projectThree > .tileTextContainer {
-    align-items: center;
-    padding-bottom: 50%;
-}
-
-#projectOne > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
-    padding-right: 5vw;
-    background-size: 250%;
-}
-
-#projectTwo > .tileTextContainer {
-    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
-    padding-left: 5vw;
-    background-size: 250%;
-}
-
-#projectThree > .tileTextContainer {
-    transition: 1s;
-    background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF);
-    background-size: 100% 250%;
 }
 
 .tileTitle {
@@ -250,180 +114,13 @@ a:hover {
     color: black;
 }
 
-.tileDescription {
-    z-index: 2;
+/* General Formatting */
+
+.relative {
+    position: relative !important;
 }
 
-.tileDescription > p {
-    margin-top: 1rem;
-}
-
-#projectOne, #projectTwo, #projectThree {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Hover over portfolio tiles */
-
-#projectOne:hover .heartLeft {
-    transform: rotate(0deg);
-    right: -110%;
-}
-
-#projectTwo:hover .heartRight {
-    transform: rotate(0deg);
-    left: -110%;
-}
-
-#projectThree:hover .heartUp {
-    transform: rotate(0deg);
-}
-
-#projectOne:hover .tileTextContainer {
-    background-position: -63%;
-}
-
-#projectTwo:hover .tileTextContainer {
-    background-position: 75%;
-}
-
-#projectThree:hover .tileTextContainer {
-    background-position: 0% -50% !important;
-}
-
-#projectOne:hover .tileTitle {
-    color: #093478;
-}
-
-#projectOne:hover .tileSubtitle {
-    color: #093478;
-}
-
-#projectTwo:hover .tileTitle {
-    color: #093478;
-}
-
-#projectTwo:hover .tileSubtitle {
-    color: #093478;
-}
-
-#projectThree:hover .tileTitle {
-    color: #093478;
-}
-
-#projectThree:hover .tileSubtitle {
-    color: #093478;
-}
-
-/* Adjustments for medium screen size */
-@media (min-width: 576px) and (max-width: 768px) {
-    #projectThree > .tileImage {
-        padding-bottom: 50% !important;
-    }
-
-    .heartUp {
-        transform: rotate(90deg);
-        z-index: 1;
-        width: 40%;
-        padding-bottom: 35%;
-        right:-20%;
-        margin-right: 0;
-        top: 30%;
-    }
-
-    #projectThree > .tileTextContainer {
-        align-items: center;
-        padding-bottom: 2rem;
-    }
-
-    #projectThree > .tileTextContainer {
-        background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
-        padding-right: 5vw;
-        background-size: 250% !important;
-    }
-
-    #projectThree:hover .heartUp {
-        transform: rotate(0deg) !important;
-        right: -110% !important;
-        top: 30% !important;
-    }
-
-    #projectThree:hover .tileTextContainer {
-        background-position: -63% !important;
-    }
-}
-
-/* Adjustments for mobile */
-
-@media (max-width: 576px) {
-    .heartLeft, .heartRight, .heartUp {
-        transform: rotate(180deg);
-        width: 25%;
-        padding-bottom: 22%;
-        left: 0;
-        right: 0;
-        margin-right: auto;
-        margin-left: auto;
-        top: 80%
-    }
-
-    #projectOne > .tileImage {
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
-    #projectOne:hover .heartLeft {
-        transform: rotate(0deg) !important;
-        right: 0 !important;
-    }
-
-    #projectTwo:hover .heartRight {
-        transform: rotate(0deg) !important;
-        left: 0 !important;
-    }
-
-    #projectThree:hover .heartUp {
-        transform: rotate(0deg) !important;
-        top: 80% !important;
-    }
-
-    #projectOne > .tileTextContainer {
-        transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #EDF3FF 50%, #CDDDFF) !important;
-        background-size: 100% 250% !important;
-        padding-bottom: 2rem !important;
-    }
-
-    #projectTwo > .tileTextContainer {
-        transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
-        background-size: 100% 250% !important;
-        padding-bottom: 2rem !important;
-    }
-
-    #projectThree > .tileTextContainer {
-        transition: 1s;
-        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
-        background-size: 100% 250% !important;
-        padding-bottom: 2rem !important;
-    }
-
-    #projectOne:hover .tileTextContainer {
-        background-position: 0% -60% !important;
-    }
-
-    #projectTwo:hover .tileTextContainer {
-        background-position: 0% -60% !important;
-    }
-
-    #projectThree > .tileImage {
-        padding-bottom: 50% !important;
-    }
-}
-
-
-
-/* Icon 1 */
+/* Nav Bar Animation */
 
 .navbar-toggler {
     padding: 0;
@@ -513,6 +210,413 @@ a:hover {
     left: 8px;
     }
 
+/* Header and Nav Formatting */
+
+.mar-bot {
+    margin-bottom: auto;
+}
+
+.header {
+    background-color: white;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+
+/* Cover Page */
+
+#coverPage {
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    color: #6F82D8;
+}
+
+a:hover {
+    color: #093478;
+    text-decoration: none;
+  }
+
+.hoverWord {
+    transition: 1s;
+}
+
+.imageLink:hover {
+    
+    filter: brightness(0) saturate(100%) invert(11%) sepia(73%) saturate(3584%) hue-rotate(213deg) brightness(92%) contrast(93%);
+}
+
+/* Circle Animations */
+
+.bigCircles {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+    visibility: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.size2Circles {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: -20%;
+}
+
+.leftBottomCircle {
+    z-index: -2;
+    background-color: #1FAD83;
+    overflow: hidden;
+}
+
+.leftTopCircle {
+    z-index: -1;
+    background-color: #6F82D8;
+    overflow: hidden;
+}
+
+.topCircle {
+    z-index: -3;
+    background-color: #F87272;
+    overflow: hidden;
+}
+
+.rightTopCircle {
+    z-index: -4;
+    background-color: #F897E9;
+    overflow: hidden;
+}
+
+.rightBottomCircle {
+    z-index: -5;
+    background-color: #B991ED;
+    overflow: hidden;
+}
+
+.bottomCircle {
+    z-index: -6;
+    background-color: #FDF187;
+    overflow: hidden;
+}
+
+/* Arrow to Portfolio */
+
+.downArrow {
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    left: 0;
+    right: 0;
+    bottom: 3rem;
+    visibility: hidden;
+    text-align: center;
+}
+
+/* Portfolio section */
+
+#portfolioTiles {
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio tile images */
+
+#projectOne > .tileImage {
+    background-color: #E5EEFF;
+    padding-bottom: 50%;
+    background-image: url(./Assets/tileDancers.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+#projectTwo > .tileImage {
+    background-color: #FFFBCC;
+    padding-bottom: 50%;
+    background-image: url(./Assets/tileNews.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#projectThree > .tileImage {
+    background-color: #F2E5FF;
+    padding-bottom: 100%;
+    background-image: url(./Assets/tileDashboard.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Heart arrow formatting */
+
+.heartLeft {
+    transform: rotate(90deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    right:-20%;
+    margin-right: 0;
+    top: 30%;
+    transition: 1s;
+}
+
+.heartRight {
+    transform: rotate(-90deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left:-20%;
+    margin-right: 0;
+    top: 30%;
+    transition: 1s;
+}
+
+.heartUp {
+    transform: rotate(180deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 40%;
+    padding-bottom: 35%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 80%;
+    transition: 1s;
+}
+
+/* Text for portfolio tiles */
+.tileTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+
+#projectThree > .tileTextContainer {
+    justify-content: flex-start;
+    padding-bottom: 25%;
+}
+
+#projectOne > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #EDF3FF 47%, #CDDDFF);
+    padding-right: 5vw;
+    background-size: 250%;
+}
+
+#projectTwo > .tileTextContainer {
+    background: linear-gradient(to right, white 47%, #FFF9B2 47%, #FFFBCE);
+    padding-left: 5vw;
+    background-size: 250%;
+}
+
+#projectThree > .tileTextContainer {
+    transition: 1s;
+    background: linear-gradient(to bottom, white 50%, white 50%, #E6CCFF);
+    background-size: 100% 250%;
+}
+
+.tileDescription {
+    z-index: 2;
+}
+
+.tileDescription > p {
+    margin-top: 1rem;
+}
+
+#projectOne, #projectTwo, #projectThree {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover over portfolio tiles */
+
+#projectOne:hover .heartLeft {
+    transform: rotate(0deg);
+    right: -110%;
+}
+
+#projectTwo:hover .heartRight {
+    transform: rotate(0deg);
+    left: -110%;
+}
+
+#projectThree:hover .heartUp {
+    transform: rotate(0deg);
+}
+
+#projectOne:hover .tileTextContainer {
+    background-position: -63%;
+}
+
+#projectTwo:hover .tileTextContainer {
+    background-position: 75%;
+}
+
+#projectThree:hover .tileTextContainer {
+    background-position: 0% -31% !important;
+}
+
+#projectOne:hover .tileTitle {
+    color: #093478;
+}
+
+#projectOne:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectTwo:hover .tileTitle {
+    color: #093478;
+}
+
+#projectTwo:hover .tileSubtitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileTitle {
+    color: #093478;
+}
+
+#projectThree:hover .tileSubtitle {
+    color: #093478;
+}
+
+/* Adjustments for medium screen size */
+@media (min-width: 576px) and (max-width: 768px) {
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+
+    .heartUp {
+        transform: rotate(90deg);
+        z-index: 1;
+        width: 40%;
+        padding-bottom: 35%;
+        right:-20%;
+        margin-right: 0;
+        top: 30%;
+    }
+
+    #projectThree > .tileTextContainer {
+        align-items: center;
+        padding-bottom: 2rem;
+        justify-content: center;
+    }
+
+    #projectThree > .tileTextContainer {
+        background: linear-gradient(to right, white 47%, #F3E8FF 47%, #E6CCFF) !important;
+        padding-right: 5vw;
+        background-size: 250% !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        right: -110% !important;
+        top: 30% !important;
+    }
+
+    #projectThree:hover .tileTextContainer {
+        background-position: -63% !important;
+    }
+}
+
+/* Adjustments for mobile */
+
+@media (max-width: 576px) {
+    .heartLeft, .heartRight, .heartUp {
+        transform: rotate(180deg);
+        width: 25%;
+        padding-bottom: 22%;
+        left: 0;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: 80%
+    }
+
+    #projectOne > .tileImage {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #projectOne:hover .heartLeft {
+        transform: rotate(0deg) !important;
+        right: 0 !important;
+    }
+
+    #projectTwo:hover .heartRight {
+        transform: rotate(0deg) !important;
+        left: 0 !important;
+    }
+
+    #projectThree:hover .heartUp {
+        transform: rotate(0deg) !important;
+        top: 80% !important;
+    }
+
+    #projectOne > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #EDF3FF 50%, #CDDDFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectTwo > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #FFFBCC 50%, #FFF9B2) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectThree > .tileTextContainer {
+        transition: 1s;
+        background: linear-gradient(to bottom, white 50%, #F3E8FF 50%, #E6CCFF) !important;
+        background-size: 100% 250% !important;
+        padding-bottom: 2rem !important;
+    }
+
+    #projectOne:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectTwo:hover .tileTextContainer {
+        background-position: 0% -60% !important;
+    }
+
+    #projectThree > .tileImage {
+        padding-bottom: 50% !important;
+    }
+}
+
+
+
+
+
 
 /* About Me */
 
@@ -520,6 +624,10 @@ a:hover {
 #biography {
     padding-left: calc(100vw/12);
     margin-top: calc(100vw/10);
+}
+
+#introduction {
+    height: calc(5*(1.3rem + 0.6vw));
 }
 
 #biography > .typed-text {
@@ -545,123 +653,99 @@ a:hover {
     overflow: hidden;
 }
 
-.circleBlue {
-    background-color: #6F82D8;
-}
-
-.circleGreen {
-    background-color: #1FAD83;
-}
-
-.circleRed {
-    background-color: #F87272;
-}
-
-.circlePurple {
-    background-color: #B991ED;
-}
-
-.circlePink {
-    background-color: #F897E9;
-}
-
-.circleYellow {
-    background-color: #FDF187;
-}
-
 .meCircleOne {
-    z-index: -5;
+    z-index: 1;
     overflow: hidden;
     margin-right: -20%;
     margin-top: -5%;
 }
 
 .meCircleTwo {
-    z-index: -4;
+    z-index: 2;
     overflow: hidden;
     margin-right: 10%;
     margin-top: 20%;
 }
 
 .meCircleThree {
-    z-index: -3;
+    z-index: 3;
     overflow: hidden;
     margin-right: 30%;
     margin-top: 50%;
 }
 
 .meCircleFour {
-    z-index: -2;
+    z-index: 4;
     overflow: hidden;
     margin-right: 38%;
     margin-top: 85%;
 }
 
 .meCircleFive {
-    z-index: -1;
+    z-index: 5;
     overflow: hidden;
     margin-right: 30%;
     margin-top: 130%;
 }
 
 .meCircleSix {
-    z-index: 10;
+    z-index: 101;
     overflow: hidden;
     margin-right: 15%;
     margin-top: 170%;
 }
 
 .meCircleSeven {
-    z-index: 11;
+    z-index: 102;
     overflow: hidden;
     margin-right: -20%;
     margin-top: 195%;
 }
 
 .meCircleEight {
-    z-index: 12;
+    z-index: 103;
     overflow: hidden;
     margin-right: -35%;
     margin-top: 230%;
 }
 
 .meCircleNine {
-    z-index: 13;
+    z-index: 104;
     overflow: hidden;
     margin-right: -25%;
     margin-top: 270%;
 }
 
 .meCircleTen {
-    z-index: 13;
+    z-index: 105;
     overflow: hidden;
     margin-right: -5%;
     margin-top: 305%;
 }
 
 .meCircleEleven {
-    z-index: 14;
+    z-index: 106;
     overflow: hidden;
     margin-right: 20%;
     margin-top: 335%;
 }
 
 .meCircleTwelve {
-    z-index: 15;
+    z-index: 107;
     overflow: hidden;
     margin-right: 35%;
     margin-top: 370%;
 }
 
 .meCircleThirteen {
-    z-index: 16;
+    z-index: 108;
     overflow: hidden;
     margin-right: 20%;
     margin-top: 400%;
 }
 
 .meCircleFourteen {
-    z-index: 17;
+    z-index: 109;
     overflow: hidden;
     margin-right: -5%;
     margin-top: 430%;
@@ -674,7 +758,7 @@ a:hover {
 }
 
 .profilePic {
-    z-index: 2;
+    z-index: 6;
     width: 100%;
     height: auto;
     margin-right: -20%;
@@ -682,7 +766,7 @@ a:hover {
 }
 
 .profilePicTwo {
-    z-index: 15;
+    z-index: 107;
     position: absolute;
     transform: scaleX(-1);
     width: 115%;
@@ -693,9 +777,675 @@ a:hover {
 
 @media (max-width: 768px) {
     .profilePic {
-        width: 50% !important;
+        width: 40% !important;
         justify-content: center !important;
         margin-right: auto !important;
         margin-left: auto;
+        z-index: 200;
+    }
+
+    #biography {
+        margin-top: calc(100vw/24) !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    
+
+    .meCircleOne, .meCircleTwo, .meCircleThree, .meCircleFour, .meCircleFive, .meCircleSix {
+        margin-left: 32%;
+        margin-top: 30%;
+        width: 34vw;
+        height: 34vw;
+    }
+
+    /*
+    ==============================================
+    Custom Animation for entrance of circle one
+    ==============================================
+    */
+
+
+    .meCircleOneEntrance{
+        animation-name: meCircleOneEntrance;
+        -webkit-animation-name: meCircleOneEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleOneEntrance {
+        0% {
+            transform: translate(-200%,-100%);
+            background-color:#6F82D8; 
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(80%,-20%);
+        }	
+    }
+
+    @-webkit-keyframes meCircleOneEntrance {
+        0% {
+            -webkit-transform: translate(-200%,-100%);
+            background-color:#6F82D8;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(80%,-20%);
+        }
+    }
+
+    /*
+    ==============================================
+    Custom Animation for entrance of circle two
+    ==============================================
+    */
+
+
+    .meCircleTwoEntrance{
+        animation-name: meCircleTwoEntrance;
+        -webkit-animation-name: meCircleTwoEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleTwoEntrance {
+        0% {
+            transform: translate(-10%,-200%);
+            background-color: #1FAD83;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(65%,45%);
+        }	
+    }
+
+    @-webkit-keyframes topCircle {
+        0% {
+            -webkit-transform: translate(-10%,-200%);
+            background-color: #1FAD83;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(65%,45%);
+        }
+    }
+
+    /*
+    ==============================================
+    Custom Animation for entrance of circle three
+    ==============================================
+    */
+
+
+    .meCircleThreeEntrance{
+        animation-name: meCircleThreeEntrance;
+        -webkit-animation-name: meCircleThreeEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleThreeEntrance {
+        0% {
+            transform: translate(200%,-100%);
+            background-color: #F87272;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-5%,70%);
+        }		
+    }
+
+    @-webkit-keyframes meCircleThreeEntrance {
+        0% {
+            -webkit-transform: translate(200%,-100%);
+            background-color: #F87272;
+        }	
+        75% {
+            -webkit-transform: translate(-5%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-5%,70%);
+        }
+    }
+
+    /*
+    ==============================================
+    Custom Animation for entrance of circle four
+    ==============================================
+    */
+
+
+    .meCircleFourEntrance{
+        animation-name: meCircleFourEntrance;
+        -webkit-animation-name: meCircleFourEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleFourEntrance {
+        0% {
+            transform: translate(200%,100%);
+            background-color: #B991ED;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-60%,25%);
+        }		
+    }
+
+    @-webkit-keyframes meCircleFourEntrance {
+        0% {
+            -webkit-transform: translate(200%,100%);
+            background-color: #B991ED;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-60%,25%);
+        }
+    }
+    
+    /*
+    ==============================================
+    Custom Animation for project page top circle
+    ==============================================
+    */
+
+
+    .meCircleFiveEntrance{
+        animation-name: meCircleFiveEntrance;
+        -webkit-animation-name: meCircleFiveEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleFiveEntrance {
+        0% {
+            transform: translate(-10%,200%);
+            background-color: #F897E9;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-50%,-40%);
+        }		
+    }
+
+    @-webkit-keyframes meCircleFiveEntrance {
+        0% {
+            -webkit-transform: translate(-10%,200%);
+            background-color: #F897E9;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-50%,-40%);
+        }
+    }
+
+
+    /*
+    ==============================================
+    Custom Animation for entrance of circle six
+    ==============================================
+    */
+
+
+    .meCircleSixEntrance{
+        animation-name: meCircleSixEntrance;
+        -webkit-animation-name: meCircleSixEntrance;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        visibility: visible !important;	
+    }
+
+    @keyframes meCircleSixEntrance {
+        0% {
+            transform: translate(-200%,100%);
+            background-color: #FDF187;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(13%,-70%);
+        }	
+    }
+
+    @-webkit-keyframes meCircleSixEntrance {
+        0% {
+            -webkit-transform: translate(-200%,100%);
+            background-color: #FDF187;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(13%,-70%)
+        }	
+    }
+}
+
+/* Project Pages */
+
+.projectHeader {
+    margin-top: calc(100vw/10);
+}
+
+/*
+    ==============================================
+    Custom Animation for entrance of blue header circle
+    ==============================================
+    */
+
+
+    .PPcircleOne{
+        animation-name: PPcircleOne;
+        -webkit-animation-name: PPcircleOne;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleOne {
+        0% {
+            transform: translate(100%,-100%);
+            background-color: #6F82D8;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(20%,25%);
+        }		
+    }
+
+    @-webkit-keyframes PPcircleOne {
+        0% {
+            -webkit-transform: translate(100%,-100%);
+            background-color: #6F82D8;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-60%,25%);
+        }
+    }
+    
+    /*
+    ==============================================
+    Custom Animation for entrance of red header circle
+    ==============================================
+    */
+
+
+    .PPcircleTwo{
+        animation-name: PPcircleTwo;
+        -webkit-animation-name: PPcircleTwo;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleTwo {
+        0% {
+            transform: translate(-100%,-100%);
+            background-color: #F87272;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-50%,40%);
+        }		
+    }
+
+    @-webkit-keyframes PPcircleTwo {
+        0% {
+            -webkit-transform: translate(-100%,-100%);
+            background-color: #F87272;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-50%,40%);
+        }
+    }
+
+
+    /*
+    ==============================================
+    Custom Animation for entrance of yellow header circle
+    ==============================================
+    */
+
+
+    .PPcircleThree {
+        animation-name: PPcircleThree;
+        -webkit-animation-name: PPcircleThree;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleThree {
+        0% {
+            transform: translate(-100%,100%);
+            background-color: #FDF187;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-32%,-40%);
+        }	
+    }
+
+    @-webkit-keyframes PPcircleThree {
+        0% {
+            -webkit-transform: translate(-100%,100%);
+            background-color: #FDF187;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-32%,-40%)
+        }	
+    }
+
+.PP1headerPic {
+    width: 120%;
+    height: auto;
+    z-index: 100;
+    margin-left: -20%;
+    margin-top: -7%;
+}
+
+.solutionOverview {
+    margin-top: 10vw;
+}
+
+.highlightBlue {
+    background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
+}
+
+.summaryCircle1 {
+    transform: translate(40%,-40%);
+}
+
+.summaryCircle2 {
+    transform: translate(70%,10%);
+}
+
+.summaryCircle3 {
+    transform: translate(-10%,0%);
+}
+
+@media (max-width: 576px) {
+    .size2Circles {
+        height: 65vw;
+        width: 65vw;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        margin-top: 0%;
+    }
+
+    .PP1headerPic {
+        width: 100%;
+        height: auto;
+        z-index: 100;
+        left: 0;
+        right: 0;
+        margin: auto;
+        margin-top: 15%;
+        margin-bottom: 25%;
+    }
+
+    /*
+    ==============================================
+    Custom Animation for entrance of blue header circle
+    ==============================================
+    */
+
+
+    .PPcircleOne{
+        animation-name: PPcircleOne;
+        -webkit-animation-name: PPcircleOne;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleOne {
+        0% {
+            transform: translate(100%,-100%);
+            background-color: #6F82D8;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(40%,30%);
+        }		
+    }
+
+    @-webkit-keyframes PPcircleOne {
+        0% {
+            -webkit-transform: translate(100%,-100%);
+            background-color: #6F82D8;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(40%,30%);
+        }
+    }
+    
+    /*
+    ==============================================
+    Custom Animation for entrance of red header circle
+    ==============================================
+    */
+
+
+    .PPcircleTwo{
+        animation-name: PPcircleTwo;
+        -webkit-animation-name: PPcircleTwo;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;	
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;		
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleTwo {
+        0% {
+            transform: translate(-100%,-100%);
+            background-color: #F87272;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-40%,40%);
+        }		
+    }
+
+    @-webkit-keyframes PPcircleTwo {
+        0% {
+            -webkit-transform: translate(-100%,-100%);
+            background-color: #F87272;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-40%,40%);
+        }
+    }
+
+
+    /*
+    ==============================================
+    Custom Animation for entrance of yellow header circle
+    ==============================================
+    */
+
+
+    .PPcircleThree {
+        animation-name: PPcircleThree;
+        -webkit-animation-name: PPcircleThree;	
+
+        animation-duration: 3s;	
+        -webkit-animation-duration: 3s;
+
+        animation-timing-function: ease-in-out;	
+        -webkit-animation-timing-function: ease-in-out;
+        
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+
+        visibility: visible !important;	
+    }
+
+    @keyframes PPcircleThree {
+        0% {
+            transform: translate(-100%,100%);
+            background-color: #FDF187;
+        }
+        75% {
+            transform: translate(0%,0%);
+        }
+        100% {
+            transform: translate(-25%,-30%);
+        }	
+    }
+
+    @-webkit-keyframes PPcircleThree {
+        0% {
+            -webkit-transform: translate(-100%,100%);
+            background-color: #FDF187;
+        }	
+        75% {
+            -webkit-transform: translate(0%,0%);
+        }
+        100% {
+            -webkit-transform: translate(-25%,-30%)
+        }	
     }
 }
