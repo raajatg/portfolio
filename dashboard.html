@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
         <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="style.css">
@@ -16,6 +18,16 @@
         <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
+        <!--Dot Navigation-->
+        <div id="dot-nav" class="position-fixed">
+            <ul>
+                <li class="awesome-tooltip blueDot" title="Solution Overview"><a href="#solutionOverview"></a></li>
+                <li class="awesome-tooltip blueDot" title="Final Design"><a href="#finalDesign"></a></li>
+                <li class="awesome-tooltip blueDot" title="Takeaways and Reflection"><a href="#takeaways"></a></li>
+                <li class="awesome-tooltip greenDot" title="Project Background"><a href="#projectBackground"></a></li>
+            </ul>
+        </div>
+
         <!--Navbar-->
         <nav class="navbar fixed-top header mar-bot">
         
@@ -45,64 +57,303 @@
         </nav>
         <!--/.Navbar-->
         
-        <!--Project Page Header-->
         <div class="vh-100 container-fluid text-left pt-4">
-            <div class="row projectHeader">
-                <div class="projectHeaderPic align-self-center col-sm-5">
-                    <div class="size2Circles PPcircleTwo lightRed"></div>
-                    <div class="size2Circles PPcircleThree lightYellow"></div>
-                    <div class="size2Circles PPcircleOne lightBlue"></div>
-                    <img class="PP1headerPic fadeCustom" src="Assets/headerAdidasDashboard.png">
-                </div>
-                
-                <div class="projectHeaderSummary col-sm-5 order-md-1 pt-2">
-                    <h2 class="prototype">The "Impossible is Nothing" Dashboard</h2>
-                    <p class="prototype fontBlue subtitle">October 2020 - November 2020</p>
-                    <h5 class="metrophobic">I designed a conceptual dashboard that unified the disparate perspectives of fashion designers, product managers and executives so they could see eye-to-eye and design shoes that were stylish, desirable, and profitable. </h5>
+            
+            <!--Project Page Header-->
+            <div class="container-fluid">
+                <div class="row projectHeader">
+                    <div class="projectHeaderPic align-self-center col-sm-5">
+                        <div class="size2Circles PPcircleTwo lightRed"></div>
+                        <div class="size2Circles PPcircleThree lightYellow"></div>
+                        <div class="size2Circles PPcircleOne lightBlue"></div>
+                        <img class="PP1headerPic fadeCustom" src="Assets/headerAdidasDashboard.png">
+                    </div>
+                    
+                    <div class="projectHeaderSummary col-sm-5 order-md-1 pt-2">
+                        <h2 class="prototype">The "Impossible is Nothing" Dashboard</h2>
+                        <p class="prototype fontBlue subtitle">October 2020 - November 2020</p>
+                        <h5 class="metrophobic">I designed a conceptual dashboard that unified the disparate perspectives of fashion designers, product managers and executives so they could see eye-to-eye and design shoes that were stylish, desirable, and profitable. </h5>
+                    </div>
                 </div>
             </div>
-            <div class="row solutionOverview">
-                <div class="col-sm-5 offset-sm-1 mb-4">
-                    <h4 class="prototype"><span class="highlightBlue">Project Overview</span></h4>
-                    <h5 class="prototype mt-4"><span class="highlightBlue">User Problem</span></h5>
-                    <p>Large organizations like Adidas often have common end-goals among employees, but can face significant challenges in delivering on those goals because the varying perspectives and skillsets of employees clash with, instead of complementing, one another.</p>
-                    <h5 class="prototype mt-4"><span class="highlightBlue">My Solution</span></h5>
-                    <p>The “Imposible is Nothing” dashboard creates common ground and understanding between three key personas as they seek to improve the performance of Adidas’s fashion sneakers segment. It does so by identifying the key goals and commonalities that these personas have, and using those as an anchor point to provide a multi-variate lens on shoe performance and prototypes.</p>
-                    <h5 class="prototype mt-4"><span class="highlightBlue">Outcomes</span></h5>
-                    <p>We presented this final dashboard prototype to a group of panelists impersonating the three distinct personas - fashion designer, product manager, and global executive - and received unanimous praise for its ability to prioritize information and focus on salience and relevance over comprehensiveness. All three personas were able to extract the key information they needed from the dashboard, but were also able to better empathize with the needs and perspectives of their peers.</p>
+        <!--Solution Overview -->
+        <div class="container-fluid solutionOverview">
+            <section id="solutionOverview">
+                <div class="row ">
+                    <div class="col-sm-5 offset-sm-1 mb-4">
+                        <h4 class="prototype"><span class="highlightBlue">Project Overview</span></h4>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">User Problem</span></h5>
+                        <p>Large organizations like Adidas often have common end-goals among employees, but can face significant challenges in delivering on those goals because the varying perspectives and skillsets of employees clash with, instead of complementing, one another.</p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">My Solution</span></h5>
+                        <p>The “Imposible is Nothing” dashboard creates common ground and understanding between three key personas as they seek to improve the performance of Adidas’s fashion sneakers segment. It does so by identifying the key goals and commonalities that these personas have, and using those as an anchor point to provide a multi-variate lens on shoe performance and prototypes.</p>
+                        <h5 class="prototype mt-4"><span class="highlightBlue">Outcomes</span></h5>
+                        <p>We presented this final dashboard prototype to a group of panelists impersonating the three distinct personas - fashion designer, product manager, and global executive - and received unanimous praise for its ability to prioritize information and focus on salience and relevance over comprehensiveness. All three personas were able to extract the key information they needed from the dashboard, but were also able to better empathize with the needs and perspectives of their peers.</p>
+                    </div>
+                    <div class="col-sm-5 offset-sm-1">
+                        <div class="row">
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">My Role</span></h5>
+                                    <p class="mt-2 mb-0">Project Manager</p>
+                                    <p class="mt-2 mb-0">Design Strategist</p>
+                                    <p class="mt-2 mb-0">User Researcher</p>
+                                    <p class="mt-2 mb-0">Prototyper</p>
+                            </div>
+                            <div class="col-5">
+                                <h5 class="prototype"><span class="highlightBlue">Tools</span></h5>
+                                <p class="mt-2 mb-0">Figma</p>
+                                <p class="mt-2 mb-0">Protopie</p>
+                            </div>
+                            <div class="col-5 mt-4">
+                                <h5 class="prototype"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
+                                <a href="#"><p class="mt-2 mb-0">Amy Zhuang</p></a>
+                                <a href="#"><p class="mt-2 mb-0">Sarah Chen</p></a>
+                                <a href="#"><p class="mt-2 mb-0">Serena Wang</p></a>
+                                <a href="#"><p class="mt-2 mb-0">Mira Mookerjee</p></a>
+                            </div>
+                        </div>
+                        <div class="col-12 summaryGraphic">
+                            <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
+                            <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
+                            <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                            <img id="adidasModel" src="Assets/adidasModel.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-5 offset-sm-1">
+            </section>
+        </div>            
+        <!--Solution Showcase -->
+            <div class="container-fluid finalDesign">
+                <section id="finalDesign">
+                    <div class="row ">
+                        <div class="col-sm-4 offset-sm-1 finalDesignDescription">
+                            <h4 class="prototype"><span class="highlightBlue">Final Design</span></h4>
+                            <h5 class="prototype mt-4"><span class="highlightBlue">Final Overview Page</span></h5>
+                            <div class="solutionDescription">
+                                <div>your content</div>
+                                <div>your content2</div>
+                                <div>your content3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="lightBlue col-12 mt-3 pt-5">
+                            <div class="heartDown"></div>
+                            <div class="solutionVisuals">
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic" src="Assets/Overview-Intro.gif">
+                                        <p class=" pt-2 darkBlueText"><i>Dashboard: Page 1 (Overview)</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic" src="Assets/Production-Intro.gif">
+                                        <p class=" pt-2 darkBlueText"><i>Dashboard: Page 2 (Production Overview)</i></p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic" src="Assets/FINAL-Shoe.gif">
+                                        <p class=" pt-2 darkBlueText"><i>Dashboard: Page 3 (Production Deep-Dive)</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!--Takeaways and Reflections-->
+            <div class="container-fluid mt-5 reflectionSection">
+                <section id="takeaways">
                     <div class="row">
-                        <div class="col-5">
-                            <h5 class="prototype"><span class="highlightBlue">My Role</span></h5>
-                                <p class="mt-2 mb-0">Project Manager</p>
-                                <p class="mt-2 mb-0">Design Strategist</p>
-                                <p class="mt-2 mb-0">User Researcher</p>
-                                <p class="mt-2 mb-0">Prototyper</p>
-                        </div>
-                        <div class="col-5">
-                            <h5 class="prototype"><span class="highlightBlue">Tools</span></h5>
-                            <p class="mt-2 mb-0">Figma</p>
-                            <p class="mt-2 mb-0">Protopie</p>
-                        </div>
-                        <div class="col-5 mt-4">
-                            <h5 class="prototype"><span class="highlightBlue hoverWord" data-words="Collaborators|Friends">Collaborators</span></h5>
-                            <a href="#"><p class="mt-2 mb-0">Amy Zhuang</p></a>
-                            <a href="#"><p class="mt-2 mb-0">Sarah Chen</p></a>
-                            <a href="#"><p class="mt-2 mb-0">Serena Wang</p></a>
-                            <a href="#"><p class="mt-2 mb-0">Mira Mookerjee</p></a>
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightBlue">Project Takeaways and Reflection</span></h4>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="size2Circles mt-1 summaryCircle1 lightRed"></div>
-                        <div class="size2Circles mt-1 summaryCircle2 lightYellow"></div>
-                        <div class="size2Circles mt-1 summaryCircle3 lightBlue"></div>
+                    <div class="row mb-5">
+                        <div class="col-sm-4 offset-sm-1">
+                            <h5 class="prototype mt-4 mb-3"><span>If I Had More Time, I Would...</span></h5>
+                            <p><strong>Use Real Data:</strong>xxx</p>
+                            <p><strong>Do User Testing:</strong>xxx</p>
+                            <p><strong>Do More Competitor Research:</strong>xxx</p>
+                        </div>
+                        <div class="col-sm-6 offset-sm-1">
+                            <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                            <div>
+                                <img class="CircleContent rightCirclePic" src="Assets/amazonExcelData.png">
+                                <p class="col-sm-9 CircleContent darkBlueText"><i>Sample Amazon review data that we used to develop our prototype and its categories</i></p>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-4 order-sm-2">
+                            <h5 class="prototype mt-4 mb-3"><span>If I Went Back in Time, I Would...</span></h5>
+                            <p><strong>Stay Focused on User Needs:</strong>xxx</p>
+                            <p><strong>Wait Before Ramping Up Fidelity:</strong>xxx</p>
+                            <p><strong>Design Modular Prototypes:</strong>xxx</p>
+                        </div>
+                        <div class="col-sm-6 order-sm-1">
+                            <div class="mediumCircles mt-1 reflectionCircle4 lightRed"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle5 lightYellow"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle6 lightBlue"></div>
+                            <div class="">
+                                <img class="CircleContent leftCirclePic" src="Assets/personaCards.png">
+                                <p class="col-sm-9 CircleContent darkBlueText"><i>Adidas persona cards that we used as the basis of our dashboard and (occasionally) got away from</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-sm-4 offset-sm-1">
+                            <h5 class="prototype mt-4 mb-3"><span>I Became Better At...</span></h5>
+                            <p><strong>Using Animations to Complement Content:</strong>xxx</p>
+                            <p><strong>Visualizing Complex Information:</strong>xxx</p>
+                            <p><strong>Prioritizing Information that Actually Matters:</strong>xxx</p>
+                        </div>
+                        <div class="col-sm-6 offset-sm-1">
+                            <div class="mediumCircles mt-1 reflectionCircle1 lightRed"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle2 lightYellow"></div>
+                            <div class="mediumCircles mt-1 reflectionCircle3 lightBlue"></div>
+                            <div>
+                                <img class="CircleContent rightCirclePic mb-2" src="Assets/protopieProgress.png">
+                                <p class="col-sm-9 CircleContent darkBlueText"><i>Creating the dashboard’s animations on Protopie, and extending beyond Figma’s limited animation capabilities</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--Project Background-->
+            <div class="container-fluid">
+                <section id="projectBackground">
+                    <div class="row">
+                        <div class="col-11 offset-sm-1">
+                            <h4 class="prototype"><span class="highlightGreen">Project Background</span></h4>
+                        </div>
+                        <div class="col-9 offset-sm-1 mt-4 processLong">
+                            <div class="d-flex justify-content-between">
+                                <span class="processLine"></span>
+                                <div>
+                                    <div class="purple iconCircles d-flex justify-content-center align-content-center">
+                                        <img class="icon" src="Assets/personaIcon.svg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="pink iconCircles d-flex justify-content-center align-content-center">
+                                        <img class="icon" src="Assets/sketchingIcon.svg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="red iconCircles d-flex justify-content-center align-content-center">
+                                        <img class="icon" src="Assets/screenIcon.svg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="yellow iconCircles d-flex justify-content-center align-content-center">
+                                        <img class="icon" src="Assets/motionIcon.svg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="blue iconCircles d-flex justify-content-center align-content-center">
+                                        <img class="icon" src="Assets/starIcon.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="mt-3 iconCaption">Persona Analysis</p>
+                                </div>
+                                <div>
+                                    <p class="mt-3 iconCaption">Sketching & Iteration 1</p>
+                                </div>
+                                <div>
+                                    <p class="mt-3 iconCaption">High-Fidelity Iteration 2</p>
+                                </div>
+                                <div>
+                                    <p class="mt-3 iconCaption">Motion & Animation</p>
+                                </div>
+                                <div>
+                                    <p class="mt-3 iconCaption">Final Thoughts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 offset-sm-1 processWinding mt-4">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="purple iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine1"></span>
+                                        <img class="iconWinding" src="Assets/personaIcon.svg">
+                                    </div>
+                                    <p class="mt-3 iconCaptionWinding">Persona Analysis</p>
+                                </div>
+                                <div>
+                                    <div class="pink iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <div class="verticalProcessLine"></div>
+                                        <img class="iconWinding" src="Assets/sketchingIcon.svg">
+                                    </div>
+                                    <p class="mt-3 iconCaptionWinding">Sketching & Iteration 1</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="red iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <span class="processLine2"></span>
+                                        <div class="verticalProcessLine"></div>
+                                        <img class="iconWinding" src="Assets/screenIcon.svg">
+                                    </div>
+                                    <p class="mt-3 iconCaptionWinding">High-Fidelity Iteration 2</p>
+                                </div>
+                                <div>
+                                    <div class="yellow iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/motionIcon.svg">
+                                    </div>
+                                    <p class="mt-3 iconCaptionWinding">Motion & Animation</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <div class="blue iconCirclesWinding d-flex justify-content-center align-content-center">
+                                        <img class="iconWinding" src="Assets/starIcon.svg">
+                                    </div>
+                                    <p class="mt-3 iconCaptionWinding">Final Thoughts</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-5 offset-sm-1 mb-4">
+                            <h5 class="prototype mt-4"><span class="highlightGreen">Project Context</span></h5>
+                            <p><i><strong>
+                                How might we leverage diverse stakeholder perspectives to improve Adidas’s performance in the fashion sneaker segment?
+                            </strong></i></p>
+                            <p class="mt-4">
+                                The importance of diversity extends beyond inclusion and representation of ethnicities, genders, or sexualities. A less talked-about but equally critical part of any team’s success is their cognitive diversity, which enhances a company’s innovation by 20%, reduces risks by 30% and eases decisions’ implementation, according to Deloitte.
+                                <br></br>
+                                Despite the benefits, cognitive diversity can be elusive - it often involves instilling appreciation for varying perspectives, which can be difficult to do in siloed organizations where employees rarely explore the value of approaches beyond their bubble. To change that, our team designed a one-stop dashboard intended for three personas with three very different perspectives - Ansela, the Global VP for Adidas Fashion Sneakers, Kenny, the Director of Fashion Sneaker Marketing for North America, and SOS, a designer for Adidas Fashion Sneakers. 
+                                <br></br>
+                                Our dashboard creates a single view with which all three personas can get the information they need, and understand how other personas’ data directly impacts their own part of the shoe launch process.  We prioritize information with overlapping areas of interest to drive this understanding, so that these personas can effectively collaborate to design better shoes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="lightGreen col-12 pt-5 background">
+                            <div class="heartDown"></div>
+                                <div>
+                                    <div class="solutionSlide">
+                                        <img class="solutionSlidePic" src="Assets/Overview-Intro.gif">
+                                        <p class=" pt-2"><i>Dashboard: Page 1 (Overview)</i></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 
-       
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="type.js"></script>
     </body>
 </html>

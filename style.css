@@ -53,6 +53,10 @@
 }
 
 /* Text Formatting */
+.darkBlueText {
+    color: #093478
+}
+
 .prototype {
     font-family: "PROTOTYPE", "helvetica","sans-serif";
     letter-spacing: 2px;
@@ -115,9 +119,171 @@ p {
 }
 
 /* General Formatting */
+body, html {
+    height: 100%;    
+}
+
+.background {
+    z-index: -100;
+}
+
 
 .relative {
     position: relative !important;
+}
+
+.icon {
+    height: 4vw;
+    width: 4vw;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+}
+
+.iconCaption {
+    width: 8vw;
+    min-width: 90px;
+    max-width: 100px;
+    text-align: center;
+}
+
+.iconWinding {
+    height: 4vw;
+    width: 4vw;
+    min-width: 45px;
+    min-height: 45px;
+    align-self: center;
+}
+
+.iconCaptionWinding {
+    width: 8vw;
+    min-width: 90px;
+    text-align: center;
+    background-color: white;
+}
+
+.processLine {
+    display:block;
+    position: absolute;
+    width: 95%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    align-self: center;
+}
+
+.verticalProcessLine {
+    border-left: 3px solid black;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+}
+
+.processLine1 {
+    display:block;
+    position: absolute;
+    width: 90%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+.processLine2 {
+    display:block;
+    position: absolute;
+    width: 90%; 
+    border-top: 3px solid #000;
+    z-index: -1;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-self: center;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+/* Dot Navigation */
+
+#dot-nav{    
+    right: 10px;
+	top: 40%;
+	height: 100px;
+    z-index: 999;
+}
+
+#dot-nav ul {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#dot-nav li {
+	position: relative;
+	background-color: #bdc3c7;
+	border:3px solid #bdc3c7;
+	border-radius: 15px 15px 15px 15px;
+	cursor: pointer;
+	padding: 5px;
+	height: 10px;
+	margin: 10px 10px 0px 0px;
+	width: 10px;
+	vertical-align:bottom;
+}
+
+#dot-nav li.blueDot.active, #dot-nav li.blueDot:hover {
+	background-color: #6F82D8;
+}
+
+#dot-nav li.greenDot.active, #dot-nav li.greenDot:hover {
+	background-color: #1FAD83;
+}
+
+#dot-nav li.purpleDot.active, #dot-nav li.purpleDot:hover {
+	background-color: #B991ED;
+}
+
+#dot-nav li.pinkDot.active, #dot-nav li.pinkDot:hover {
+	background-color: #F897E9;
+}
+
+#dot-nav li.redDot.active, #dot-nav li.redDot:hover {
+	background-color: #F87272;
+}
+
+#dot-nav li.yellowDot.active, #dot-nav li.yellowDot:hover {
+	background-color: #FDF187;
+}
+
+
+#dot-nav a {
+	outline: 0;
+	vertical-align:top;
+	margin: 0px 0px 0px 25px;
+	position: relative;
+	top:-5px;
+}
+.awesome-tooltip + .tooltip > .tooltip-inner {
+    /*background-color: #8e44ad;*/ 
+    color: #f5f5f5; 
+    border: 1px solid #8e44ad; 
+}
+.awesome-tooltip + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #8e44ad;
 }
 
 /* Nav Bar Animation */
@@ -275,6 +441,26 @@ a:hover {
     left: 0;
     right: 0;
     margin-top: -20%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.iconCircles {
+    height: 8vw;
+    width: 8vw;
+    min-width: 90px;
+    max-width: 100px;
+    min-height: 90px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.iconCirclesWinding {
+    height: 8vw;
+    width: 8vw;
+    min-width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
 }
 
 .leftBottomCircle {
@@ -1101,6 +1287,10 @@ a:hover {
     margin-top: calc(100vw/10);
 }
 
+.projectHeaderSummary {
+    margin-left: 5%;
+}
+
 /*
     ==============================================
     Custom Animation for entrance of blue header circle
@@ -1257,12 +1447,28 @@ a:hover {
     margin-top: -7%;
 }
 
+#adidasModel {
+    width: 60%;
+    height: auto;
+    margin-left: 30%;
+    margin-top: -30%;
+}
+
 .solutionOverview {
     margin-top: 10vw;
+    overflow: hidden;
 }
 
 .highlightBlue {
     background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
+}
+
+.highlightGreen {
+    background: linear-gradient(0deg, #E7FEF2 40%, transparent 40%);
+}
+
+.summaryGraphic {
+    padding-bottom: 18%;
 }
 
 .summaryCircle1 {
@@ -1277,7 +1483,134 @@ a:hover {
     transform: translate(-10%,0%);
 }
 
+.solutionSlide {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3vw;
+}
+
+.solutionSlidePic {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.finalDesignDescription {
+    z-index: 2;
+}
+
+.heartDown {
+    transform: rotate(0deg);
+    position: absolute;
+    background-image: url(./Assets/heart.svg);
+    background-position: center;
+    background-size: cover;
+    width: 20%;
+    max-width: 200px;
+    min-width: 50px;
+    padding-bottom: 20%;
+    left: -60%;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: -16vw;
+    z-index: 0;
+}
+
+@media (min-width: 1300px) {
+    .finalDesign {
+        margin-top: -10%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .finalDesign {
+        margin-top: -20%;
+    }
+}
+
+.reflectionSection {
+    overflow: hidden;
+}
+
+.reflectionCircle1 {
+    transform: translate(40%,-10%);
+    z-index: -1;
+}
+
+.reflectionCircle2 {
+    transform: translate(70%,30%);
+    z-index: -1;
+}
+
+.reflectionCircle3 {
+    transform: translate(-10%,20%);
+    z-index: -1;
+}
+
+.reflectionCircle4 {
+    transform: translate(-40%,-10%);
+    z-index: -1;
+}
+
+.reflectionCircle5 {
+    transform: translate(-70%,30%);
+    z-index: -1;
+}
+
+.reflectionCircle6 {
+    transform: translate(10%,20%);
+    z-index: -1;
+}
+
+.CircleContent {
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.rightCirclePic {
+    width: 70%;
+    height: auto;
+    margin-top: 10%;
+}
+
+.leftCirclePic {
+    width: 70%;
+    height: auto;
+}
+
+.processWinding {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .processLong {
+        display: none;
+    }
+
+    .processWinding {
+        display: block;
+    }
+}
+
+/*
+==============================================
+Modifications for Mobile
+==============================================
+*/
 @media (max-width: 576px) {
+    .projectHeader {
+        overflow: hidden;
+    }
+
+    .projectHeaderSummary {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    
     .size2Circles {
         height: 65vw;
         width: 65vw;
@@ -1288,6 +1621,24 @@ a:hover {
         left: 0;
         right: 0;
         margin-top: 0%;
+        z-index: -1;
+    }
+
+    .reflectionCircle1, .reflectionCircle2, .reflectionCircle3, .reflectionCircle4, .reflectionCircle5, .reflectionCircle6 {
+        height: 50vw !important;
+        width: 50vw !important;
+    }
+
+    .reflectionCircle1, .reflectionCircle4 {
+        transform: translate(0%,0%);
+    }
+    
+    .reflectionCircle2, .reflectionCircle5 {
+        transform: translate(30%,28%);
+    }
+    
+    .reflectionCircle3, .reflectionCircle6 {
+        transform: translate(-30%,20%);
     }
 
     .PP1headerPic {
@@ -1447,5 +1798,32 @@ a:hover {
         100% {
             -webkit-transform: translate(-25%,-30%)
         }	
+    }
+
+    .summaryGraphic {
+        display: none;
+    }
+
+    .solutionOverview {
+        margin-bottom: 3rem;
+        overflow: hidden;
+    }
+
+    .heartDown {
+        transform: rotate(0deg);
+        position: absolute;
+        background-image: url(./Assets/heart.svg);
+        background-position: center;
+        background-size: cover;
+        width: 20%;
+        max-width: 200px;
+        min-width: 50px;
+        padding-bottom: 20%;
+        left: -60%;
+        right: 0;
+        margin-right: auto;
+        margin-left: auto;
+        top: -10vw;
+        z-index: 0;
     }
 }

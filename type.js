@@ -21,3 +21,5 @@ const meType = new Typewriter(introduction);
     .deleteChars(3)
     .typeString(" 🏘")
     .start();
+
+
