@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    $('.awesome-tooltip').tooltip({
+        placement: 'left'
+    });
     //Change the style of the navbar button
     $('.third-button').on('click', function () {
   
@@ -78,10 +81,7 @@ $(document).ready(function () {
         dots: true,
         focusOnSelect: true
       });
-
-      //$('.awesome-tooltip').tooltip({
-        //placement: 'left'
-    //});   
+ 
 
     $(window).bind('scroll',function(e){
       dotnavigation();

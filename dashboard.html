@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
+        <title>Adidas Dashboard</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Metrophobic&amp;display=swap" rel="stylesheet">
@@ -12,8 +12,13 @@
         <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="style.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script type="text/javascript" src="Bootstrap/js/bootstrap.js"></script>
+        
         <script src="core.js"></script>
         <script type="text/javascript" src="main.js"></script>
     </head>
@@ -78,7 +83,7 @@
             </div>
         <!--Solution Overview -->
         <div class="container-fluid solutionOverview">
-            <section id="solutionOverview">
+            <section id="solutionOverview" class="section">
                 <div class="row ">
                     <div class="col-sm-5 offset-sm-1 mb-4">
                         <h4 class="prototype"><span class="highlightBlue">Project Overview</span></h4>
@@ -123,7 +128,7 @@
         </div>            
         <!--Solution Showcase -->
             <div class="container-fluid finalDesign">
-                <section id="finalDesign">
+                <section id="finalDesign" class="section">
                     <div class="row ">
                         <div class="col-sm-4 offset-sm-1 finalDesignDescription">
                             <h4 class="prototype"><span class="highlightBlue">Final Design</span></h4>
@@ -164,14 +169,14 @@
             </div>
             
             <!--Takeaways and Reflections-->
-            <div class="container-fluid mt-5 reflectionSection">
-                <section id="takeaways">
+            <div class="container-fluid reflectionSection">
+                <section id="takeaways" class="section">
                     <div class="row">
                         <div class="col-11 offset-sm-1">
                             <h4 class="prototype"><span class="highlightBlue">Project Takeaways and Reflection</span></h4>
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row">
                         <div class="col-sm-4 offset-sm-1">
                             <h5 class="prototype mt-4 mb-3"><span>If I Had More Time, I Would...</span></h5>
                             <p><strong>Use Real Data:</strong>xxx</p>
@@ -189,7 +194,7 @@
                             
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row mt-5">
                         <div class="col-sm-4 order-sm-2">
                             <h5 class="prototype mt-4 mb-3"><span>If I Went Back in Time, I Would...</span></h5>
                             <p><strong>Stay Focused on User Needs:</strong>xxx</p>
@@ -206,7 +211,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row mt-5">
                         <div class="col-sm-4 offset-sm-1">
                             <h5 class="prototype mt-4 mb-3"><span>I Became Better At...</span></h5>
                             <p><strong>Using Animations to Complement Content:</strong>xxx</p>
@@ -227,7 +232,7 @@
             </div>
             <!--Project Background-->
             <div class="container-fluid">
-                <section id="projectBackground">
+                <section id="projectBackground" class="section">
                     <div class="row">
                         <div class="col-11 offset-sm-1">
                             <h4 class="prototype"><span class="highlightGreen">Project Background</span></h4>
@@ -350,9 +355,6 @@
                 </section>
             </div>
         </div>
-
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script src="type.js"></script>
     </body>
