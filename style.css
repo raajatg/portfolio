@@ -4,10 +4,6 @@
     background-color: #6F82D8;
 }
 
-.fontBlue {
-    color: #6F82D8;
-}
-
 .green {
     background-color: #1FAD83;
 }
@@ -77,6 +73,10 @@
 }
 
 /* Text Formatting */
+.fontBlue {
+    color: #6F82D8;
+}
+
 .darkBlueText {
     color: #093478
 }
@@ -596,23 +596,18 @@ a:hover {
     overflow: hidden;
 }
 
-.takeawayCircleTop {
-    top: 5%;
-    left: -15% !important;
+.takeawayCircles {
+    position: absolute;
     z-index: -100;
+    height: 100%;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0%;
+    right: 0;
+    width: auto;
 }
 
-.takeawayCircleRight {
-    top: 35%;
-    left: 45% !important;
-    z-index: -100;
-}
-
-.takeawayCircleLeft {
-    top: 50%;
-    left: -45% !important;
-    z-index: -100;
-}
 
 /* Arrow to Portfolio */
 
@@ -1934,3 +1929,53 @@ Modifications for Mobile
         z-index: 0;
     }
 }
+
+#bottomNav {
+    margin-top: 100px;
+    height: 300px;
+}
+
+.leftNavCircle {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: -180px;
+    top: 0%;
+    z-index: -100;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.rightNavCircle {
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: -180px;
+    top: 0%;
+    z-index: -100;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.bottomNavPic {
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    top: -40%;
+    left: 0%;
+}
+
+.bottomNavText {
+    margin-top: 75px;
+}
+
+
+
