@@ -1,8 +1,9 @@
 var app = document.getElementById('app');
+let handWave = "👋";
 
 const homeType = new Typewriter(app);
     homeType.pauseFor(4000)
-    .typeString('Oh, hello there <span>&#x1F44B</span>!')
+    .typeString(`Oh, hello there ${handWave}!`)
     .pauseFor(2000)
     .deleteAll()
     .typeString("I'm Raajat Gupta.")
