@@ -2,7 +2,7 @@ var app = document.getElementById('app');
 
 const homeType = new Typewriter(app);
     homeType.pauseFor(4000)
-    .typeString('Oh, hello there 👋!')
+    .typeString('Oh, hello there <span>&#x1F44B</span>!')
     .pauseFor(2000)
     .deleteAll()
     .typeString("I'm Raajat Gupta.")

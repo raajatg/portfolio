@@ -375,10 +375,12 @@ h3, .h3 {
 
 h4, .h4 {
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h5, .h5 {
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 h6, .h6 {
@@ -4343,6 +4345,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

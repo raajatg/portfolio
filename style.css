@@ -168,6 +168,7 @@ p {
     font-size: 0.8rem;
     letter-spacing: 2px;
     color: #093478;
+    font-weight: bold;
 }
 
 .nav-text {
@@ -179,6 +180,7 @@ p {
     font-family: "Metrophobic", "helvetica","sans-serif";
     letter-spacing: 2px;
     color: #093478;
+    font-weight: normal;
 }
 
 .tileTitle {
@@ -2020,7 +2022,7 @@ Modifications for Mobile
 }
 
 .bottomNavText {
-    margin-top: 75px;
+    padding-top: 175px;
     z-index: 100 !important;
 }
 
@@ -2143,7 +2145,7 @@ Modifications for Mobile
     }
     
     .bottomNavText {
-        margin-top: 60px !important;
+        padding-top: 123px !important;
     }
     
     .bottomNavContainer {
