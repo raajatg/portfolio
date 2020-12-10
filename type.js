@@ -1,13 +1,13 @@
 var app = document.getElementById('app');
-let handWave = String.fromCharCode();
+let handWave = String.fromCodePoint(0x1F44B);;
 
-//const homeType = new Typewriter(app);
-  //  homeType.pauseFor(4000)
-    //.typeString(`Oh, hello there ${handWave}!`)
-    //.pauseFor(2000)
-    //.deleteAll()
-    //.typeString("I'm Raajat Gupta.")
-    //.start();
+const homeType = new Typewriter(app);
+    homeType.pauseFor(4000)
+    .typeString(`Oh, hello there${handWave}!`)
+    .pauseFor(2000)
+    .deleteAll()
+    .typeString("I'm Raajat Gupta.")
+    .start();
 
 var introduction = document.getElementById('introduction');
 
