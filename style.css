@@ -36,10 +36,6 @@
     background-color: #E7FEF2;
 }
 
-.lightRed {
-    background-color: #FFE1DB;
-}
-
 .lightPurple {
     background-color: #EEE1FF;
 }
@@ -48,13 +44,69 @@
     background-color: #FFE9FE;
 }
 
+.lightRed {
+    background-color: #FFE1DB;
+}
+
 .lightYellow {
     background-color: #FFFBCC;
+}
+
+.lightBlueFilter {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(17%) saturate(802%) hue-rotate(190deg) brightness(105%) contrast(105%);
+}
+
+.lightGreenFilter {
+    filter: brightness(0) saturate(100%) invert(92%) sepia(27%) saturate(235%) hue-rotate(70deg) brightness(109%) contrast(99%);
+}
+
+.lightPurpleFilter {
+    filter: brightness(0) saturate(100%) invert(82%) sepia(5%) saturate(1762%) hue-rotate(210deg) brightness(108%) contrast(105%);
+}
+
+.lightPinkFilter {
+    filter: brightness(0) saturate(100%) invert(77%) sepia(100%) saturate(154%) hue-rotate(215deg) brightness(104%) contrast(106%);
+}
+
+.lightRedFilter {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(13%) saturate(721%) hue-rotate(316deg) brightness(109%) contrast(101%);
+}
+
+.lightYellowFilter {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(76%) saturate(518%) hue-rotate(312deg) brightness(108%) contrast(103%);
 }
 
 /* Text Formatting */
 .darkBlueText {
     color: #093478
+}
+
+.whiteText {
+    color: #fff;
+}
+
+.highlightBlue {
+    background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
+}
+
+.highlightGreen {
+    background: linear-gradient(0deg, #E7FEF2 40%, transparent 40%);
+}
+
+.highlightPurple {
+    background: linear-gradient(0deg, #EEE1FF 40%, transparent 40%);
+}
+
+.highlightPink {
+    background: linear-gradient(0deg, #FFE9FE 40%, transparent 40%);
+}
+
+.highlightRed {
+    background: linear-gradient(0deg, #FFE1DB 40%, transparent 40%);
+}
+
+.highlightYellow {
+    background: linear-gradient(0deg, #FFFBCC 40%, transparent 40%);
 }
 
 .prototype {
@@ -66,8 +118,33 @@
     font-family: "Metrophobic", "helvetica","sans-serif";
 }
 
+.quote {
+    font-family: "Metrophobic", "helvetica","sans-serif";
+    color: #8995A0;
+    z-index: 5;
+}
+
+.quotation-start {
+    position: absolute;
+    z-index: -100;
+    top: -10%;
+    left:-10%;
+}
+
+.quotation-end {
+    position: absolute;
+    z-index: -100;
+    bottom:-10%;
+    right:-10%;
+    transform: rotate(180deg);
+}
+
 p {
     font-family: "helvetica","sans-serif";
+}
+
+.numbering {
+    padding-top: 10px;
 }
 
 .plainList {
@@ -117,6 +194,14 @@ p {
     letter-spacing: 2px;
     color: black;
 }
+
+/* Picture Formatting */
+
+.width-80 {
+    width: 70%;
+    height: auto;
+}
+
 
 /* General Formatting */
 body, html {
@@ -468,6 +553,13 @@ a:hover {
     border-radius: 50%;
 }
 
+.numberCircles {
+    min-width: 50px;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
 .leftBottomCircle {
     z-index: -2;
     background-color: #1FAD83;
@@ -502,6 +594,24 @@ a:hover {
     z-index: -6;
     background-color: #FDF187;
     overflow: hidden;
+}
+
+.takeawayCircleTop {
+    top: 5%;
+    left: -15% !important;
+    z-index: -100;
+}
+
+.takeawayCircleRight {
+    top: 35%;
+    left: 45% !important;
+    z-index: -100;
+}
+
+.takeawayCircleLeft {
+    top: 50%;
+    left: -45% !important;
+    z-index: -100;
 }
 
 /* Arrow to Portfolio */
@@ -1462,14 +1572,6 @@ a:hover {
 .solutionOverview {
     margin-top: 10vw;
     overflow: hidden;
-}
-
-.highlightBlue {
-    background: linear-gradient(0deg, #E5EEFF 40%, transparent 40%);
-}
-
-.highlightGreen {
-    background: linear-gradient(0deg, #E7FEF2 40%, transparent 40%);
 }
 
 .summaryGraphic {
