@@ -1,4 +1,23 @@
+
+
 $(document).ready(function () {
+    $("#projectOne").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+      });
+
+    $("#projectTwo").click(function() {
+    window.location = $(this).find("a").attr("href"); 
+    return false;
+    });
+
+    $("#projectThree").click(function() {
+        window.location = $(this).find("a").attr("href"); 
+        return false;
+      });
+
+
+
     $('.awesome-tooltip').tooltip({
         placement: 'left'
     });

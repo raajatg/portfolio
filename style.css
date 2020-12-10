@@ -209,6 +209,10 @@ body, html {
     scroll-padding-top: 400px;
 }
 
+#solutionOverview, #finalDesign, #takeaways, #projectBackground, #personaAnalysis, #sketchingIteration1, #highFidelity, #motionAnimation, #finalThoughts, #bottomNav {
+    overflow-x:hidden;
+}
+
 .section {
     padding-top: 70px;
 }
@@ -603,8 +607,6 @@ a:hover {
     top: 10%;
     margin-left: auto;
     margin-right: auto;
-    left: 0%;
-    right: 0;
     width: auto;
 }
 
@@ -1930,9 +1932,11 @@ Modifications for Mobile
     }
 }
 
+/* Bottom Navigation Project Page */
+
 #bottomNav {
     margin-top: 100px;
-    height: 300px;
+    height: 380px;
 }
 
 .leftNavCircle {
@@ -1943,10 +1947,21 @@ Modifications for Mobile
     border-radius: 50%;
     position: absolute;
     left: -180px;
+    z-index: -100 !important;
     top: 0%;
-    z-index: -100;
-
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 
 .rightNavCircle {
@@ -1957,25 +1972,200 @@ Modifications for Mobile
     border-radius: 50%;
     position: absolute;
     right: -180px;
-    top: 0%;
     z-index: -100;
-
+    top: 0%;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
 }
 
-.bottomNavPic {
+.bottomNavContainer:hover .leftNavCircle {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.bottomNavContainer:hover .rightNavCircle {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.leftNavPic {
     min-width: 200px;
     max-width: 200px;
     height: auto;
     transform: scaleX(-1);
     position: absolute;
-    top: -40%;
+    bottom: 42%;
     left: 0%;
+}
+
+.rightNavPic {
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: 45%;
+    right: 0%;
 }
 
 .bottomNavText {
     margin-top: 75px;
+    z-index: 100 !important;
+}
+
+.bottomNavContainer {
+    color: black;
+    height: 300px;
 }
 
 
 
+@keyframes pulsing {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulsing {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
+
+.backTopCircle {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+
+    animation-name: pulsing;
+	-webkit-animation-name: pulsing;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.backTopCircle:hover {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+}
+
+.backTopArrow {
+    min-width: 75px;
+    max-width: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #bottomNav {
+        margin-top: 100px;
+        height: 200px !important;
+    }
+    
+    .leftNavCircle {
+        min-width: 200px !important;
+        min-height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+       
+        left: -120px !important;
+        top: 0%;
+    }
+    
+    .rightNavCircle {
+        min-width: 200px !important;
+        min-height: 200px !important;
+        max-width: 200px !important;
+        max-height: 200px !important;
+       
+        right: -120px !important;
+        top: 0%;
+    }
+    
+    .leftNavPic {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        bottom: 42%;
+        left: 0%;
+    }
+    
+    .rightNavPic {
+        min-width: 80px !important;
+        max-width: 80px !important;
+        bottom: 42%;
+        right: 0%;
+    }
+    
+    .bottomNavText {
+        margin-top: 60px !important;
+    }
+    
+    .bottomNavContainer {
+        height: 200px !important;
+    }
+
+    .backTopCircle {
+        min-width: 75px !important;
+        min-height: 75px !important;
+        max-width: 75px !important;
+        max-height: 75px !important;
+    }
+
+    .backTopArrow {
+        min-width: 55px !important;
+        max-width: 55px !important;
+        min-height: 55px !important;
+        max-height: 55px !important;
+    }
+    
+
+    .backTopText {
+        width: 100px !important;
+    }
+}
