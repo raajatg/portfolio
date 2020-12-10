@@ -1,5 +1,5 @@
 var app = document.getElementById('app');
-let handWave = "👋";
+let handWave = String.fromCodePoint(0x1F44B);;
 
 const homeType = new Typewriter(app);
     homeType.pauseFor(4000)
