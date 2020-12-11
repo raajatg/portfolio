@@ -189,7 +189,7 @@ Custom Animation for entrance of top circle
 		-webkit-transform: translate(0%,0%);
 	}
 	100% {
-		-webkit-transform: translate(60%,-5%);
+		-webkit-transform: translate(60%,0%);
 		opacity: 10%;
 	}
 }
@@ -336,7 +336,7 @@ Custom Animation for entrance of bottom circle
 		-webkit-transform: translate(0%,0%);
 	}
 	100% {
-		-webkit-transform: translate(-60%,-5%);
+		-webkit-transform: translate(-60%,0%);
 		opacity: 20%;
 	}
 }
