@@ -79,7 +79,7 @@ Custom Animation for entrance of left bottom circle
 	}
 	100% {
 		transform: translate(-30%,-50%);
-		opacity: 10%;
+		background-color: rgba(31, 173, 131,0.1);
 	}	
 }
 
@@ -92,6 +92,7 @@ Custom Animation for entrance of left bottom circle
 	}
 	100% {
 		-webkit-transform: translate(-30%,-50%);
+		background-color: rgba(31, 173, 131,0.1);
 	}	
 }
 
@@ -140,6 +141,7 @@ Custom Animation for entrance of left top circle
 	}
 	100% {
 		-webkit-transform: translate(30%,-50%);
+		opacity: 10%;
 	}
 }
 
