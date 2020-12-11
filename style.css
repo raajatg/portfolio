@@ -568,7 +568,7 @@ a:hover {
 
 .leftBottomCircle {
     z-index: -2;
-    background-color: #1FAD83;
+    background-color: rgba(31, 173, 131,0.1);
     overflow: hidden;
 }
 
