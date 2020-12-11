@@ -568,37 +568,31 @@ a:hover {
 
 .leftBottomCircle {
     z-index: -2;
-    background-color: rgba(31, 173, 131,1);
     overflow: hidden;
 }
 
 .leftTopCircle {
     z-index: -1;
-    background-color: #6F82D8;
     overflow: hidden;
 }
 
 .topCircle {
     z-index: -3;
-    background-color: #F87272;
     overflow: hidden;
 }
 
 .rightTopCircle {
     z-index: -4;
-    background-color: #F897E9;
     overflow: hidden;
 }
 
 .rightBottomCircle {
     z-index: -5;
-    background-color: #B991ED;
     overflow: hidden;
 }
 
 .bottomCircle {
     z-index: -6;
-    background-color: #FDF187;
     overflow: hidden;
 }
 
