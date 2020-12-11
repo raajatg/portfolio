@@ -568,8 +568,57 @@ a:hover {
 
 .leftBottomCircle {
     z-index: -2;
-    background-color: rgba(31, 173, 131,0.1);
+    background-color: rgba(31, 173, 131,1);
     overflow: hidden;
+}
+
+/*
+==============================================
+Custom Animation for entrance of left bottom circle
+==============================================
+*/
+
+
+.leftBottomCircle{
+	animation-name: leftBottomCircle;
+	-webkit-animation-name: leftBottomCircle;	
+
+	animation-duration: 4s;	
+	-webkit-animation-duration: 4s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;
+	
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+
+	visibility: visible !important;	
+}
+
+@keyframes leftBottomCircle {
+	0% {
+		transform: translate(-200%,100%);
+	}
+	75% {
+		transform: translate(0%,0%);
+	}
+	100% {
+		transform: translate(-30%,-50%);
+		background-color: rgba(31, 173, 131,0.1);
+	}	
+}
+
+@-webkit-keyframes leftBottomCircle {
+	0% {
+		-webkit-transform: translate(-200%,100%);
+	}	
+	75% {
+		-webkit-transform: translate(0%,0%);
+	}
+	100% {
+        -webkit-transform: translate(-30%,-50%);
+        background-color: rgba(31, 173, 131,1);
+	}	
 }
 
 .leftTopCircle {
