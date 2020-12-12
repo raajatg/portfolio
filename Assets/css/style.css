@@ -949,9 +949,6 @@ Adjustments to Tiles for SMALL SCREEN SIZE
 */
 
 @media (max-width: 576px) {
-    
-    
-    
     /* Change heart rotations */
     .heartLeft, .heartRight, .heartUp {
         transform: rotate(180deg);
